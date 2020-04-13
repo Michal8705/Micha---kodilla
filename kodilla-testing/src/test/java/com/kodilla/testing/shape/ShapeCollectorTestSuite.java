@@ -58,9 +58,9 @@ public class ShapeCollectorTestSuite {
         task.addFigure(shape5);
 
         boolean result = task.removeFigure(shape2);
-
+        System.out.println(result);
         //Then
-        Assert.assertFalse(result);
+        Assert.assertTrue(result);
     }
 
     //       Sprawdzenie czy wyświetlony zostanie shape4   //

@@ -6,11 +6,12 @@ import java.util.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class StatisticTest {
+public class
+StatisticTest {
 
     // gdy liczba postów = 0
     @Test
-    public void Test1() {
+    public void check0Posts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         double posts = 0.0;
@@ -38,7 +39,7 @@ public class StatisticTest {
     }
     // gdy liczba postów = 1000
     @Test
-    public void Test2() {
+    public void check1000Posts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         double posts = 1000.0;
@@ -67,7 +68,7 @@ public class StatisticTest {
     }
     // gdy liczba komentarzy = 0
     @Test
-    public void Test3() {
+    public void check0Comments() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         double posts = 1000.0;
@@ -96,7 +97,7 @@ public class StatisticTest {
     }
     // gdy liczba komentarzy < liczba postów
     @Test
-    public void Test4() {
+    public void commentsLessThanPosts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         double posts = 50.0;
@@ -124,7 +125,7 @@ public class StatisticTest {
     }
     // gdy liczba komentarzy > liczba postów
     @Test
-    public void Test5() {
+    public void commentsMoreThanPosts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         double posts = 50.0;
@@ -152,7 +153,7 @@ public class StatisticTest {
     }
     // gdy liczba użytkowników = 0
     @Test
-    public void Test6() {
+    public void check0Users() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         double posts = 50.0;
@@ -181,7 +182,7 @@ public class StatisticTest {
     }
     // gdy liczba użytkowników = 100
     @Test
-    public void Test7() {
+    public void check100Users() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         double posts = 50.0;
