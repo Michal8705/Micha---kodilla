@@ -2,7 +2,6 @@ package com.kodilla.testing.forum.statistics;
 
 
 public class Count {
-    double comments;
     double avUserPosts;
     double avUserComments;
     double avPostComments;
