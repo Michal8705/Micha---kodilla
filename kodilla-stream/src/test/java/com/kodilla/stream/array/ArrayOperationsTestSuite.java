@@ -19,5 +19,4 @@ public class ArrayOperationsTestSuite {
         //Then
         Assert.assertEquals(14.5,average,0);
     }
-
 }
