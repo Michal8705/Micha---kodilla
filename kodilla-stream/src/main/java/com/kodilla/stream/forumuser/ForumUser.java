@@ -39,7 +39,8 @@ public final class ForumUser {
         return posts;
     }
     public double getYear() {
-
+/*
+//                              wyliczenie 20 lat na dokładny dzień
         Date d1 = new GregorianCalendar(birthDate.getYear(), birthDate.getMonthValue(), birthDate.getDayOfMonth(),
                 23, 59).getTime();
 
@@ -47,6 +48,8 @@ public final class ForumUser {
         long days = today.getTime() - d1.getTime();
 
         return days/(1000 * 60 * 60 * 24)/365;
+        */
+        return birthDate.getYear();
     }
 
 
