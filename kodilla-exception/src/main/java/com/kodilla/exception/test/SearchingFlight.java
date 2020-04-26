@@ -17,7 +17,7 @@ public class SearchingFlight {
         int airport = 0;
         int possibleFlight = 0;
         for (Map.Entry<String, Boolean> entry : flights.entrySet()) {
-            if (flight.getArrivalAirport() == entry.getKey()) {
+            if (flight.getArrivalAirport().equals(entry.getKey())) {
                 airport = 1;
                 if (entry.getValue() == true) {
                     possibleFlight = 1;
