@@ -2,7 +2,10 @@ package com.kodilla.good.patterns.challenges.Food2DoorProducts;
 
 public class ExtraFoodShop implements Contractor{
 
-    private String name = "ExtraFoodShop";
+    private String name;
+    public ExtraFoodShop() {
+        this.name = "ExtraFoodShop";
+    }
 
     public boolean orderProcess(ContractorOrder contractorOrder) {
         System.out.println("New order:"  + "\n" +

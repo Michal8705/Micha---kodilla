@@ -2,7 +2,10 @@ package com.kodilla.good.patterns.challenges.Food2DoorProducts;
 
 public class GlutenFreeShop implements Contractor{
 
-    private String name = "GlutenFreeShop";
+    private String name;
+    public GlutenFreeShop() {
+        this.name = "GlutenFreeShop";
+    }
 
     public boolean orderProcess(ContractorOrder contractorOrder) {
         System.out.println("New order:" + "\n" +
