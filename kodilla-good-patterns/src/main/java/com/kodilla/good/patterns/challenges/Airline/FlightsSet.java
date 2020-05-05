@@ -5,16 +5,16 @@ import java.util.Set;
 
 public final class FlightsSet {
 
-    private final Set<Flights> flightsList;
+    private final Set<Flight> flightsList;
 
     public FlightsSet() {
         flightsList = new HashSet<>();
-        flightsList.add(new Flights("Warsow", "Berlin"));
-        flightsList.add(new Flights("Berlin", "Moscow"));
-        flightsList.add(new Flights("Warsow", "Moscow"));
+        flightsList.add(new Flight("Warsow", "Berlin"));
+        flightsList.add(new Flight("Berlin", "Moscow"));
+        flightsList.add(new Flight("Warsow", "Moscow"));
     }
 
-    public Set<Flights> getFlightsList() {
+    public Set<Flight> getFlightsList() {
         return flightsList;
     }
 }

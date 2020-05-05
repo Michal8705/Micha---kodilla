@@ -5,12 +5,14 @@ public class Aplication {
 
     public static void main(String[] args) {
 
-        FlightsFinderRequest flightsFinderRequest1 = new FlightsFinderRequest(new FindArrival("Moscow"));
-        FlightsFinderRequest flightsFinderRequest2 = new FlightsFinderRequest(new FindDeparture("Berlin"));
-        FlightsFinderRequest flightsFinderRequest3 = new FlightsFinderRequest(new FindTransfer());
+        FindArrival flight1 = new FindArrival("Moscow");
+        FindDeparture flight2 = new FindDeparture("Warsow");
+        FindTransfer flight3 = new FindTransfer("Moscow");
 
-        flightsFinderRequest1.process();
-        flightsFinderRequest2.process();
-        flightsFinderRequest3.process();
+        Search finder1 = new Search();
+
+        finder1.flightTo(flight1);
+        finder1.flightFrom(flight2);
+        finder1.flightTransfer(flight3);
     }
 }

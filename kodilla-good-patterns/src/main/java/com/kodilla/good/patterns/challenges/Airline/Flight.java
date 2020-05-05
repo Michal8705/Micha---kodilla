@@ -1,11 +1,12 @@
 package com.kodilla.good.patterns.challenges.Airline;
 
-public class Flights {
+public class Flight {
 
     private final String departure;
     private final String arrival;
 
-    public Flights(final String departure, final String arrival) {
+
+    public Flight(final String departure, final String arrival) {
         this.departure = departure;
         this.arrival = arrival;
     }
@@ -23,7 +24,7 @@ public class Flights {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Flights flight = (Flights) o;
+        Flight flight = (Flight) o;
 
         if (!departure.equals(flight.departure)) return false;
         return arrival.equals(flight.arrival);
