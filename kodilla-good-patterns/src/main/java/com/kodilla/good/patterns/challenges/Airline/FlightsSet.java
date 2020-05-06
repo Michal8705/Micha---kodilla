@@ -11,7 +11,9 @@ public final class FlightsSet {
         flightsList = new HashSet<>();
         flightsList.add(new Flight("Warsow", "Berlin"));
         flightsList.add(new Flight("Berlin", "Moscow"));
+        flightsList.add(new Flight("Berlin", "Paris"));
         flightsList.add(new Flight("Warsow", "Moscow"));
+        flightsList.add(new Flight("Warsow", "Paris"));
     }
 
     public Set<Flight> getFlightsList() {

@@ -7,7 +7,7 @@ public class Aplication {
 
         FindArrival flight1 = new FindArrival("Moscow");
         FindDeparture flight2 = new FindDeparture("Warsow");
-        FindTransfer flight3 = new FindTransfer("Moscow");
+        FindTransfer flight3 = new FindTransfer("Warsow","Paris");
 
         Search finder1 = new Search();
 

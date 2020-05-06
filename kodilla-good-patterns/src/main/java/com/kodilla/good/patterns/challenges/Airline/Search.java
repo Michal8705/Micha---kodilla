@@ -54,7 +54,7 @@ public class Search {
             System.out.println("No flights with transfer");
         } else {
             transfers.stream()
-                    .filter(f -> f.getArrival().equals(findTransfer.getArrival()))
+                    .filter(f -> f.getArrival().equals(findTransfer.getArrival()) && f.getDeparture().equals(findTransfer.getDeparture()))
                             .map(f -> "Flight from " + f.getDeparture() + " to " + f.getArrival() + " with transfer in "  + f.getTransfer())
                     .forEach(System.out::println);
         }
