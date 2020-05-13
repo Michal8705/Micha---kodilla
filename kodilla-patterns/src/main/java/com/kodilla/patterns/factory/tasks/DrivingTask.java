@@ -27,24 +27,4 @@ public class DrivingTask implements Task {
     public boolean isTaskExecuted() {
         return executed;
     }
-
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//
-//        DrivingTask that = (DrivingTask) o;
-//
-//        if (!taskName.equals(that.taskName)) return false;
-//        if (!where.equals(that.where)) return false;
-//        return using.equals(that.using);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        int result = taskName.hashCode();
-//        result = 31 * result + where.hashCode();
-//        result = 31 * result + using.hashCode();
-//        return result;
-//    }
 }
