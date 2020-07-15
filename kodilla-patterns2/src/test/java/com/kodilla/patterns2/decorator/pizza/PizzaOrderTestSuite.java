@@ -50,6 +50,6 @@ public class PizzaOrderTestSuite {
         //When
         String ingredients = pizzaOrder.getIngredient();
         //Then
-        assertEquals("Pizza + tomatos + double cheese + one hour on delivery", ingredients);
+        assertEquals("Regular pizza + tomatos + double cheese + one hour on delivery", ingredients);
     }
 }
