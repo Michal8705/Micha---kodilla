@@ -51,8 +51,8 @@ public class FacadeTestSuite {
         int company3Id = company3.getId();
 
         //When
-        List<Company> companiesName = facade.searchCompanyWithNameParts("%Goo%");
-        List<Employee> employeesLastname = facade.searchEmployeeWithLastnameParts("%Kow%");
+        List<Company> companiesName = facade.searchCompanyWithNameParts("Goo");
+        List<Employee> employeesLastname = facade.searchEmployeeWithLastnameParts("Kow");
 
         //Then
         Assert.assertEquals(1, companiesName.size());
