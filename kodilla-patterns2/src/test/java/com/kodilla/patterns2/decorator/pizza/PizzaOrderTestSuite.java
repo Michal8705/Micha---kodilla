@@ -24,7 +24,7 @@ public class PizzaOrderTestSuite {
         //When
         String ingredients = pizzaOrder.getIngredient();
         //Then
-        assertEquals("Pizza", ingredients);
+        assertEquals("Regular pizza", ingredients);
     }
 
     @Test
